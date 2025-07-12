@@ -29,10 +29,25 @@ alias g='git'
 alias d='docker'
 alias r='rails'
 
+alias vi='nvim'
+alias vim='nvim'
+alias vimdiff='nvim -d'
+
 # Git
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
+
+# Build-related
+CORES=`nproc`
+
+alias m="make -j$CORES V=1 VERBOSE=1 ARGS='-j$CORES'"
+alias mm="make -j$CORES V=1 VERBOSE=1 && make install -j$CORES"
+alias mmm="make clean -j$CORES V=1 VERBOSE=1"
+alias n="make -j$CORES"
+alias c="cargo b --release && cargo b"
+alias cl="cargo clean"
+alias ct="cargo nextest run"
 
 # Find packages without leaving the terminal
 alias yayf="yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
