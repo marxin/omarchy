@@ -8,5 +8,6 @@ yay -S --noconfirm --needed iftop iotop htop autoconf automake \
     postgresql perf atuin starship
 
 rustup toolchain install nightly
+rustup default nightly
 
 sudo npm install --global coffeescript less
