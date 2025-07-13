@@ -1,6 +1,7 @@
 yay -R --noconfirm rust chromium
 
-# TODO: poop: bad version of zig
+# TODO: poop: bad version of zig: can be just downloaded
+
 yay -S --noconfirm --needed iftop iotop htop autoconf automake \
     make cmake gcc aarch64-linux-gnu-gcc riscv64-linux-gnu-gcc clang lld mold \
     qemu qemu-user elfutils gdb valgrind strace bloaty wild \
