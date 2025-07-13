@@ -71,3 +71,12 @@ refresh-xcompose() {
   pkill fcitx5
   setsid fcitx5 &>/dev/null &
 }
+
+# ELF-related functions
+function x() {
+  eu-readelf -S $@ && eu-readelf -l $@ && eu-readelf -s $@
+}
+
+function y() {
+  objdump -dwr $@ && readelf -rW $@
+}

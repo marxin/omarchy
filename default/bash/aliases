@@ -1,5 +1,6 @@
 # File system
 alias ls='eza -lh --group-directories-first --icons=auto'
+alias l='ls'
 alias lsa='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias lta='lt -a'
@@ -48,6 +49,14 @@ alias n="make -j$CORES"
 alias c="cargo b --release && cargo b"
 alias cl="cargo clean"
 alias ct="cargo nextest run"
+
+# Misc
+alias rf="readlink -f"
+alias gg="git grep"
+alias gg5="git grep -A5 -B5"
+alias val="valgrind --leak-check=yes --trace-children=yes"
+alias gbr="git for-each-ref --sort=-committerdate refs/heads/ | head -n40"
+alias gbrall="git for-each-ref --sort=-committerdate refs/heads/"
 
 # Find packages without leaving the terminal
 alias yayf="yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
