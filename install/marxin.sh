@@ -7,7 +7,7 @@ yay -S --noconfirm --needed iftop iotop htop autoconf automake \
     qemu qemu-user elfutils gdb valgrind strace bloaty wild \
     rustup google-chrome cargo-binstall cargo-nextest samply \
     mono mono-msbuild mono-nuget nodejs npm ipython visual-studio-code-bin \
-    postgresql perf atuin starship ninja
+    postgresql perf atuin starship ninja uutils-coreutils thunderbird
 
 rustup toolchain install nightly
 rustup target add --toolchain nightly \
