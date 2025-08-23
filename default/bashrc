@@ -1,3 +1,6 @@
+# The bash-preexec is needed for Atuin and has been installed manually.
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
@@ -12,3 +15,8 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Set a custom prompt with the directory revealed (alternatively use https://starship.rs)
 # PS1="\W \[\e]0;\w\a\]$PS1"
+
+. "$HOME/.cargo/env"
+
+export RISCV64GC_UNKNOWN_LINUX_GNU_OPENSSL_INCLUDE_DIR=/home/marxin/bin/openssl_riscv64/include
+export RISCV64GC_UNKNOWN_LINUX_GNU_OPENSSL_LIB_DIR=/home/marxin/bin/openssl_riscv64/lib
