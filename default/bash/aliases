@@ -45,7 +45,6 @@ CORES=`nproc`
 alias m="make -j$CORES V=1 VERBOSE=1 ARGS='-j$CORES'"
 alias mm="make -j$CORES V=1 VERBOSE=1 && make install -j$CORES"
 alias mmm="make clean -j$CORES V=1 VERBOSE=1"
-alias n="make -j$CORES"
 alias c="cargo b --release && cargo b"
 alias cl="cargo clean"
 alias ct="cargo nextest run"
