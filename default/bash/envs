@@ -1,4 +1,5 @@
 # Editor used by CLI
-export EDITOR="code --disable-gpu"
+export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
 export BAT_THEME=ansi
+export TERMINAL="ghostty"
