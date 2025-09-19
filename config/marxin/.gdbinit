@@ -5,3 +5,7 @@ set auto-load safe-path /
 set print pretty on
 set pagination off
 set debuginfod enabled on
+
+define context
+disassemble $pc-40, $pc+40
+end
