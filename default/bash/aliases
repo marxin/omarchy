@@ -40,11 +40,9 @@ alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
 
 # Build-related
-CORES=`nproc`
-
-alias m="make -j$CORES V=1 VERBOSE=1 ARGS='-j$CORES'"
-alias mm="make -j$CORES V=1 VERBOSE=1 && make install -j$CORES"
-alias mmm="make clean -j$CORES V=1 VERBOSE=1"
+alias m="make -j V=1 VERBOSE=1 ARGS='-j'"
+alias mm="make -j V=1 VERBOSE=1 && make install -j"
+alias mmm="make clean -j V=1 VERBOSE=1"
 alias c="cargo b --release && cargo b"
 alias cl="cargo clean"
 alias ct="cargo nextest run"
