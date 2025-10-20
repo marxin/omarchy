@@ -6,7 +6,7 @@ yay -S --noconfirm --needed iftop iotop htop autoconf automake \
   rustup cargo-binstall cargo-nextest samply \
   mono mono-msbuild mono-nuget nodejs npm ipython visual-studio-code-bin \
   postgresql perf atuin starship ninja uutils-coreutils thunderbird hyperfine \
-  wasmer wabt binaryen
+  rsync wasmer wabt binaryen
 
 rustup toolchain install nightly
 rustup target add --toolchain nightly \
