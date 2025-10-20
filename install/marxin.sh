@@ -18,3 +18,5 @@ rustup component add rustc-codegen-cranelift-preview --toolchain nightly
 rustup default nightly
 
 sudo npm install --global coffeescript less
+
+echo "For atuin, install pre-exec as mentioned in the manual"
