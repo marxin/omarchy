@@ -6,7 +6,7 @@ sudo pacman -Sy iftop iotop htop autoconf automake \
   rustup cargo-binstall cargo-nextest samply \
   mono mono-msbuild nuget nodejs npm ipython visual-studio-code-bin \
   postgresql perf atuin starship ninja uutils-coreutils thunderbird hyperfine \
-  rsync wasmer wabt binaryen webkit2gtk gitoxide
+  rsync wasmer wabt binaryen webkit2gtk gitoxide wasm-tools
 yay -S mono-nugget
 
 rustup toolchain install nightly
