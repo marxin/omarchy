@@ -7,6 +7,10 @@ function y() {
   objdump -dwr $@ && readelf -rW $@
 }
 
+function hex() {
+  printf "0x%x\n" $@
+}
+
 # Compression
 compress() { tar -czf "${1%/}.tar.gz" "${1%/}"; }
 alias decompress="tar -xzf"
