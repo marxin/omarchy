@@ -56,6 +56,7 @@ alias mmm="make clean -j$CORES V=1 VERBOSE=1"
 alias c="cargo b --release && cargo b"
 alias cl="cargo clean"
 alias ct="cargo nextest run"
+alias ca='RUSTFLAGS="-Z threads=8 -Clink-arg=--ld-path=mold" cargo +nightly'
 
 # Misc
 alias rf="readlink -f"
