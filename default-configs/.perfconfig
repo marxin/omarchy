@@ -1,0 +1,4 @@
+[annotate]
+	show_linenr = true
+[record]
+  debuginfod = system

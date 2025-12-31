@@ -1,0 +1,30 @@
+[alias]
+	co = checkout
+	cp = cherry-pick
+[user]
+	name = Martin Liska
+	email = martin.liska@hey.com
+[stash]
+	showPatch = true
+[advice]
+  detachedHead = false
+  skippedCherryPicks = false
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[help]
+  autoCorrect = immediate
+[log]
+  follow = true
+[rebase]
+  autosquash = true
+[push]
+  autoSetupRemote = true
+[diff]
+  submodule = diff
+[imap]
+  folder = "INBOX.Drafts"
+  host = imaps://imap.web4u.cz
+  sslverify = true
+  user = m.liska@foxlink.cz
