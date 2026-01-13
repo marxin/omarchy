@@ -1,6 +1,9 @@
 # Set complete path
 export PATH="$HOME/.local/bin:$PATH"
 
+export RISCV64GC_UNKNOWN_LINUX_GNU_OPENSSL_INCLUDE_DIR=/home/marxin/bin/openssl_riscv64/include
+export RISCV64GC_UNKNOWN_LINUX_GNU_OPENSSL_LIB_DIR=/home/marxin/bin/openssl_riscv64/lib
+
 # Autocompletion
 if [[ ! -v BASH_COMPLETION_VERSINFO && -f /usr/share/bash-completion/bash_completion ]]; then
   source /usr/share/bash-completion/bash_completion
