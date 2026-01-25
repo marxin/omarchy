@@ -32,7 +32,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Tools
-alias c='opencode'
+# alias c='opencode'
 alias d='docker'
 alias r='rails'
 n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
@@ -54,11 +54,12 @@ CORES=`nproc`
 alias m="make -j$CORES V=1 VERBOSE=1 ARGS='-j$CORES'"
 alias mm="make -j$CORES V=1 VERBOSE=1 && make install -j$CORES"
 alias mmm="make clean -j$CORES V=1 VERBOSE=1"
-alias c="cargo b --release && cargo b"
+
 alias cl="cargo clean"
 alias ct="cargo nextest run"
 alias cn='RUSTFLAGS="-Z threads=8 -Clink-arg=--ld-path=wild" cargo +nightly'
 alias ctn='RUSTFLAGS="-Z threads=8 -Clink-arg=--ld-path=wild" cargo +nightly nextest run'
+alias c="cn b && cn b --release"
 
 # Misc
 alias rf="readlink -f"
