@@ -8,7 +8,7 @@ function y() {
 }
 
 function hex() {
-  printf "0x%x\n" $@
+  python -c "print(hex($@))"
 }
 
 # Compression
