@@ -93,3 +93,6 @@ img2png() {
     -define png:exclude-chunk=all \
     "${img%.*}-optimized.png"
 }
+
+# Omarchy default
+for f in $OMARCHY_PATH/default/bash/fns/*; do source "$f"; done
