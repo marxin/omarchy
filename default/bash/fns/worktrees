@@ -15,7 +15,7 @@ ga() {
 }
 
 # Remove worktree and branch from within active worktree directory.
-gd() {
+gdelete() {
   if gum confirm "Remove worktree and branch?"; then
     local cwd base branch root worktree
 
