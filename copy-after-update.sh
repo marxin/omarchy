@@ -2,6 +2,7 @@
 
 cp config/hypr/bindings.conf ~/.config/hypr/
 cp config/hypr/input.conf ~/.config/hypr/
+cp config/hypr/hypridle.conf ~/.config/hypr
 cp config/waybar/config.jsonc ~/.config/waybar
 cp config/waybar/style.css ~/.config/waybar
 cp -r default/bash/* ~/.local/share/omarchy/default/bash
