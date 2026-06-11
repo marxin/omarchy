@@ -73,7 +73,7 @@ alias mm="make -j$CORES V=1 VERBOSE=1 && make install -j$CORES"
 alias mmm="make clean -j$CORES V=1 VERBOSE=1"
 
 alias cl="cargo clean"
-alias ct="cargo nextest run"
+alias ct="cargo nextest run --nff"
 alias cn='RUSTFLAGS="-Z threads=8 -Clink-arg=--ld-path=wild" cargo +nightly'
 alias ctn='RUSTFLAGS="-Z threads=8 -Clink-arg=--ld-path=wild" cargo +nightly nextest run --nff'
 alias c="cn b && cn b --release"
