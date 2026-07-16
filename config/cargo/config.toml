@@ -1,6 +1,3 @@
-[build]
-target-dir = "/home/marxin/.cargo/target"
-
 [target.aarch64-unknown-linux-gnu]
 linker = "aarch64-linux-gnu-gcc"
 rustflags = ["-C", "link-arg=-fuse-ld=mold"]
